@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>Qurbani Poster</title>
+<style>
+    body { 
+        display: flex; 
+        justify-content: center; 
+        background-color: #e0e0e0; 
+        margin: 0; 
+        padding: 20px; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    }
+    .poster { 
+        background-color: #054853; /* گہرا سبز/نیلا بیک گراؤنڈ */
+        width: 550px; 
+        padding: 30px; 
+        border: 8px solid #b89947; 
+        border-radius: 10px; 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+        text-align: center; 
+        color: white; 
+    }
+    .top-section { 
+        display: flex; 
+        justify-content: space-between; 
+        margin-bottom: 25px; 
+    }
+    .circle { 
+        width: 140px; 
+        height: 140px; 
+        background-color: #e5d8b8; 
+        border: 5px solid #b89947; 
+        border-radius: 50%; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        font-weight: bold; 
+        color: #054853; 
+        box-shadow: inset 0 0 15px rgba(0,0,0,0.3); 
+        font-size: 20px;
+        text-align: center;
+    }
+    .dome-circle {
+        background: repeating-linear-gradient(45deg, #111, #111 10px, #fff 10px, #fff 20px);
+        position: relative;
+    }
+    .dome-top {
+        background-color: #2e7d32;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px 50px 0 0;
+        position: absolute;
+        top: 20px;
+    }
+    .header-text { 
+        font-size: 24px; 
+        margin-top: 10px; 
+        font-weight: bold;
+    }
+    .main-title { 
+        font-size: 70px; 
+        font-weight: bold; 
+        color: #ffda44; 
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 5px 5px 15px rgba(0,0,0,0.5); 
+        margin: 15px 0; 
+    }
+    .sub-title { 
+        font-size: 24px; 
+        color: #ffcccc; 
+        margin-bottom: 20px; 
+    }
+    .cross-box { 
+        background: linear-gradient(to right, #d4af37, #fff2cd, #d4af37); 
+        border: 3px solid #8b6508; 
+        border-radius: 10px; 
+        padding: 20px 40px; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        margin: 30px 10px; 
+        height: 50px; 
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.2), 0 5px 15px rgba(0,0,0,0.4); 
+    }
+    .cross { 
+        color: #d32f2f; 
+        font-size: 60px; 
+        font-weight: bold; 
+        font-family: Arial, sans-serif; 
+    }
+    .note { 
+        font-size: 20px; 
+        line-height: 1.6; 
+        margin: 20px; 
+        text-align: center; 
+    }
+    .price-box { 
+        background: linear-gradient(to bottom, #f3d052, #c79a20); 
+        color: black; 
+        display: inline-block; 
+        padding: 12px 35px; 
+        font-size: 34px; 
+        font-weight: bold; 
+        border-radius: 12px; 
+        border: 2px solid #fff; 
+        box-shadow: 0 5px 10px rgba(0,0,0,0.4); 
+        margin: 20px 0; 
+    }
+    .contact-text { 
+        font-size: 24px; 
+        margin-top: 15px; 
+    }
+    .whatsapp-container { 
+        font-size: 45px; 
+        font-weight: bold; 
+        color: #ffda44; 
+        margin: 15px 0; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 15px; 
+    }
+    .whatsapp-icon {
+        background-color: #25D366;
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .footer { 
+        background-color: #d4af37; 
+        color: black; 
+        padding: 20px; 
+        font-size: 28px; 
+        font-weight: bold; 
+        margin: 30px -30px -30px -30px; 
+        border-bottom-left-radius: 2px; 
+        border-bottom-right-radius: 2px; 
+    }
+    .url { 
+        font-size: 22px; 
+        font-weight: normal; 
+        margin-top: 5px; 
+    }
+</style>
+</head>
+<body>
+
+<div class="poster">
+    <div class="top-section">
+        <div class="circle">Logo<br>Space</div>
+        <div class="circle dome-circle">
+            <div class="dome-top"></div>
+        </div>
+    </div>
+    
+    <div class="header-text">किल्के रज़ा फाउंडेशन, मुंबई और<br>रद्दे सुल्हे कुल्लियत मिशन बरेली शरीफ़ के ज़ेरे एहतेमाम</div>
+    
+    <div class="main-title">इज्तेमाई क़ुरबानी</div>
+    
+    <div class="sub-title">सिर्फ़ सच्चे पक्के अहले सुन्नत यानी सुन्नी बरेलवी हज़रात के लिए!</div>
+    
+    <div class="cross-box">
+        <span class="cross">❌</span>
+        <span style="flex-grow: 1;"></span>
+        <span class="cross">❌</span>
+    </div>
+    
+    <div class="note">नोट: यह क़ुरबानी शरई कौंसिल ऑफ़ इंडिया, बरेली शरीफ़ के फ़ैसलों की रौशनी में अंजाम दी जाती है और गोश्त वहीं पर मुसलमानों में तक़्सीम कर दिया जाता है।</div>
+    
+    <div class="price-box">एक हिस्सा की क़ीमत 2100 रुपए</div>
+    
+    <div class="contact-text">हिस्सा लेने के लिए इस नंबर पर मैसेज करें:</div>
+    
+    <div class="whatsapp-container">
+        <span class="whatsapp-icon">📞</span>
+        965-786-1546
+    </div>
+    
+    <div class="footer">
+        Kilke Raza Foundation, Mumbai
+        <div class="url">www.KilkeRaza.com</div>
+    </div>
+</div>
+
+</body>
+</html>
