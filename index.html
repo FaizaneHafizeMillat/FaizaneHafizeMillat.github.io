@@ -36,7 +36,7 @@
             
             text-align: center;
             line-height: 2.2;
-            margin-top: 15px;
+            margin-top: 5px;   
             margin-bottom: 20px;
         }
 
@@ -46,7 +46,41 @@
             height: auto;      /* تصویر کی لمبائی خود بخود ایڈجسٹ ہوگی */
             display: block;
             margin-bottom: 15px; /* تصویروں کے درمیان فاصلہ */
-            border-radius: 5px; /* ہلکے سے گول کونے (اگر نہ چاہیں تو یہ لائن ہٹا دیں) */
+            border-radius: 5px; /* ہلکے سے گول کونے */
+        }
+
+        /* 🔴 اپ ڈیٹ شدہ آڈیو پلیئر کی خصوصی سیٹنگ */
+        .audio-player {
+            width: 100%;
+            height: 52px;              /* پلیئر کی اونچائی */
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 8px;        /* گول کونے */
+            outline: none;
+            background-color: #1e1e1e; /* ڈارک بیک گراؤنڈ */
+            
+            /* 🔴 سفید چمکدار بارڈر تاکہ پلیئر واضح نظر آئے */
+            border: 1.5px solid #ffffff; 
+            
+            /* 🔴 آئیکنز اور بٹنوں کو روشن اور واضح کرنے کے لیے */
+            color-scheme: dark;
+            accent-color: #ffffff;     /* سیک بار کی لائن کو چمکدار سفید کرنے کے لیے */
+            
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+        }
+
+        /* 🔴 پلے (Play) کے بٹن کو بڑا اور روشن کرنے کا کوڈ */
+        audio::-webkit-media-controls-play-button {
+            transform: scale(1.4);      /* بٹن 40% بڑا */
+            cursor: pointer;
+            margin-left: 10px;
+            margin-right: 10px;
+            filter: brightness(1.8);    /* آئیکن کو مزید چمکدار کرنے کے لیے */
+        }
+
+        /* پلیئر کے اندرونی بیک گراؤنڈ کا رنگ */
+        audio::-webkit-media-controls-panel {
+            background-color: #1e1e1e;
         }
     </style>
 </head>
@@ -54,21 +88,29 @@
 
     <div class="container">
 
-        <!-- 1. سب سے اوپر اردو کی 1 یا 2 لائنیں -->
+        <!-- 1. تصویر (عرسِ سرکارِ کلاں) - سب سے اوپر -->
+        <img src="Urse_Sarkare_Kalan.jpg" alt="عرس سرکار کلاں" class="full-img" style="margin-bottom: 2px;">
+
+        <!-- 🔴 2. اپ ڈیٹ شدہ آڈیو پلیئر (3 نقطوں اور والیم کے بغیر، واضح سفید بٹن اور بارڈر کے ساتھ) -->
+        <audio controls controlsList="nodownload noplaybackrate novolume" class="audio-player">
+            <source src="Aashiqon_Ke_Waste.mp3" type="audio/mpeg">
+            آپ کا براؤزر آڈیو پلیئر کو سپورٹ نہیں کرتا۔
+        </audio>
+
+        <!-- 3. اردو کی 1 یا 2 لائنیں -->
         <div class="urdu-text">
             مفتیِ مرکزی دارالافتاء (بریلی شریف) حضرت مولانا مفتی بلال انور صاحب قبلہ کا فتویٰ:
         </div>
 
-        <!-- 2. پہلی تصویر -->
-        <!-- 🔴 src=" " کے اندر اپنی تصویر کا نام یا لنک لکھیں -->
+        <!-- 4. پہلی تصویر (فتویٰ 0) -->
         <img src="Fatwa-0.jpg" alt="تصویر 1" class="full-img">
 
-        <!-- 3. تصویر کے نیچے اردو میں ایک لائن -->
+        <!-- 5. تصویر کے نیچے اردو میں ایک لائن -->
         <div class="urdu-text">
              مفتی ابرار احمد امجدی، مرکزِ تربیتِ افتاء (اوجھا گنج، بستی) کا فتویٰ:
         </div>
 
-        <!-- 4. اس کے بعد 3 تصویریں ایک کے نیچے ایک -->
+        <!-- 6. اس کے بعد 3 تصویریں ایک کے نیچے ایک -->
         <img src="Fatwa-1.jpg" alt="تصویر 2" class="full-img">
         <img src="Fatwa-2.jpg" alt="تصویر 3" class="full-img">
         <img src="Fatwa-3.jpg" alt="تصویر 4" class="full-img">
