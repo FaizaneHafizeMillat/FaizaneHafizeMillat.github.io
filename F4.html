@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اَمینُ المَکَّاری</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Noto Nastaliq Urdu', serif;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+        }
+        .urdu-text {
+            font-size: 22px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 2.2;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        .full-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .audio-player {
+            width: 100%;
+            height: 52px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            outline: none;
+            background-color: #1e1e1e;
+            border: 1.5px solid #ffffff;
+            color-scheme: dark;
+            accent-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+        }
+        audio::-webkit-media-controls-play-button {
+            transform: scale(1.4);
+            cursor: pointer;
+            margin-left: 10px;
+            margin-right: 10px;
+            filter: brightness(1.8);
+        }
+        audio::-webkit-media-controls-panel {
+            background-color: #1e1e1e;
+        }
+        .poetry {
+            color: #ffe066;
+        }
+        .download-section {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .dl-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(180deg, #7dd3fc, #38bdf8, #0284c7);
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+        }
+        .dl-btn:hover {
+            background: linear-gradient(180deg, #38bdf8, #0284c7, #075985);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="urdu-text poetry">
+            اپنے پیر کو چھوڑ دیا، غیر سے رشتہ جوڑ لیا<br>
+            جھوٹی عزت کی خاطر، خود کو سید بول دیا<br>
+            علمائے حق سے دور ہوا، گستاخوں سے گلے ملا<br>
+            تقریروں میں کفر بکا، وہ ہے اَمینُ المَکَّاری
+        </div>
+
+        <div class="urdu-text" style="margin-bottom: 15px;">
+            ان اشعار کو نیچے آڈیو میں جس طرح کلام پڑھا گیا ہے، بالکل اُسی طرح پڑھیں۔ کمرے میں مکمل خاموشی ہو اور ذرا بھی شور نہ ہو۔ اس طرح پڑھ کر صاف ریکارڈنگ ہمیں بھیج دیں۔
+        </div>
+
+        <audio controls controlsList="nodownload noplaybackrate novolume" class="audio-player">
+            <source src="Sample.mp3" type="audio/mpeg">
+            آپ کا براؤزر آڈیو پلیئر کو سپورٹ نہیں کرتا۔
+        </audio>
+
+        <img src="Aminul-Makkari.jpg" alt="امین المکاری" class="full-img">
+
+        <div class="download-section">
+            <a href="Sample.mp3" download class="dl-btn">Download Audio</a>
+            <a href="Aminul-Makkari.jpg" download class="dl-btn">Download Poster</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
